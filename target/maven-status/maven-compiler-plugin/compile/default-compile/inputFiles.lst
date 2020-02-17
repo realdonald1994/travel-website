@@ -1,6 +1,8 @@
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\web\servlet\RegisterUserServlet.java
+E:\code\intellij\travel\src\main\java\cn\itcast\travel\dao\CategoryDao.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\dao\UserDao.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\domain\RouteImg.java
+E:\code\intellij\travel\src\main\java\cn\itcast\travel\service\impl\CategoryServiceImpl.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\domain\Favorite.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\domain\User.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\service\UserService.java
@@ -8,7 +10,9 @@ E:\code\intellij\travel\src\main\java\cn\itcast\travel\util\UuidUtil.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\web\servlet\ExitServlet.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\web\servlet\UserServlet.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\web\servlet\BaseServlet.java
+E:\code\intellij\travel\src\main\java\cn\itcast\travel\dao\impl\CategoryDaoImpl.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\domain\Category.java
+E:\code\intellij\travel\src\main\java\cn\itcast\travel\service\CategoryService.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\service\impl\UserServiceImpl.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\util\MailUtils.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\util\JedisUtil.java

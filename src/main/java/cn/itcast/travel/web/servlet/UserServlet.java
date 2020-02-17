@@ -44,8 +44,9 @@ public class UserServlet extends BaseServlet {
             ResultInfo info = new ResultInfo();
             info.setFlag(false);
             info.setErrorMsg("verification code error！");
-            ObjectMapper mapper = new ObjectMapper();
-            String json = mapper.writeValueAsString(info);
+//            ObjectMapper mapper = new ObjectMapper();
+//            String json = mapper.writeValueAsString(info);
+            String json = writeValueAsString(info);
             response.setContentType("application/json;charset=utf-8");
             response.getWriter().write(json);
             return;
@@ -73,8 +74,9 @@ public class UserServlet extends BaseServlet {
             info.setFlag(false);
             info.setErrorMsg("register failed！");
         }
-        ObjectMapper mapper = new ObjectMapper();
-        String json = mapper.writeValueAsString(info);
+//        ObjectMapper mapper = new ObjectMapper();
+//        String json = mapper.writeValueAsString(info);
+        String json = writeValueAsString(info);
         //4.response
         response.setContentType("application/json;charset=utf-8");
         response.getWriter().write(json);
@@ -118,9 +120,10 @@ public class UserServlet extends BaseServlet {
             info.setFlag(true);
             request.getSession().setAttribute("user",u);
         }
-        ObjectMapper mapper = new ObjectMapper();
-        response.setContentType("application/json;charset=utf-8");
-        mapper.writeValue(response.getOutputStream(),info);
+//        ObjectMapper mapper = new ObjectMapper();
+//        response.setContentType("application/json;charset=utf-8");
+//        mapper.writeValue(response.getOutputStream(),info);
+        writeValue(info,response);
     }
 
     /**
@@ -132,9 +135,10 @@ public class UserServlet extends BaseServlet {
      */
     public void findOne(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Object user = request.getSession().getAttribute("user");
-        ObjectMapper mapper = new ObjectMapper();
-        response.setContentType("application/json;charset=utf-8");
-        mapper.writeValue(response.getOutputStream(),user);
+//        ObjectMapper mapper = new ObjectMapper();
+//        response.setContentType("application/json;charset=utf-8");
+//        mapper.writeValue(response.getOutputStream(),user);
+        writeValue(user,response);
     }
 
     /**
