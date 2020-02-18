@@ -23,7 +23,7 @@ public class RouteDaoImpl implements RouteDao {
             sb.append(" and cid = ? ");
             params.add(cid);
         }
-        if(rname!=null &&rname.length()>0){
+        if(rname!=null &&rname.length()>0 && !"null".equals(rname)){
             sb.append(" and rname like ?");
             params.add("%"+rname+"%");
         }
@@ -43,13 +43,14 @@ public class RouteDaoImpl implements RouteDao {
             sb.append(" and cid = ? ");
             params.add(cid);
         }
-        if(rname!=null &&rname.length()>0){
+        if(rname!=null &&rname.length()>0 &&!"null".equals(rname)){
             sb.append(" and rname like ?");
             params.add("%"+rname+"%");
         }
 
         sb.append(" limit ? , ? ");
         sql = sb.toString();
+
 
         params.add(currentPage);
         params.add(pageSize);

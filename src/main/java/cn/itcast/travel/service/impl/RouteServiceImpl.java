@@ -32,7 +32,7 @@ public class RouteServiceImpl implements RouteService {
         List<Route> list = dao.findByPage(cid, start, pageSize,rname);
         pb.setList(list);
 
-        int totalPage = (totalCount%pageSize) ==0?totalCount/pageSize:(totalCount/pageSize)+1;
+        int totalPage = (totalCount%pageSize) == 0?totalCount/pageSize:(totalCount/pageSize)+1;
         pb.setTotalPage(totalPage);
 
         return pb;
