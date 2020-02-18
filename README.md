@@ -4,4 +4,5 @@
   * Main techniques: Servlet+Jquery+Ajax+JDBCTempleat+Duird+BeanUtils+json+bootstrap
   * Nosql:redis+Jedis
   * other: tomcat maven Javamail
+  * browser: chrome
 ## Running Environment: Windows 10

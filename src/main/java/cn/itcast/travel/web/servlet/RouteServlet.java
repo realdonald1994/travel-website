@@ -28,10 +28,12 @@ public class RouteServlet extends BaseServlet {
         String currentPage_str = request.getParameter("currentPage");
         String pageSize_str = request.getParameter("pageSize");
         String cid_str = request.getParameter("cid");
+        String rname = request.getParameter("rname");
+        rname = new String(rname.getBytes("iso-8859-1"),"utf-8");
 
         //2. process parameter
         int cid =0;
-        if(cid_str!=null||cid_str.length()>0){
+        if(cid_str != null && cid_str.length() > 0 && !"null".equals(cid_str)){
             cid=Integer.parseInt(cid_str);
         }
 
@@ -51,7 +53,7 @@ public class RouteServlet extends BaseServlet {
 
 
         //3. call service
-        PageBean<Route> pb = service.pageQuery(cid, currentPage, pageSize);
+        PageBean<Route> pb = service.pageQuery(cid, currentPage, pageSize,rname);
 
         //4. pagebean->json->return
         writeValue(pb,response);

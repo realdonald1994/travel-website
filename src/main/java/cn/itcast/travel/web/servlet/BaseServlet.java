@@ -19,8 +19,10 @@ public class BaseServlet extends HttpServlet {
 
         //1. 获取请求路径
         String uri = req.getRequestURI();
+
         //2. 获取方法名称
         String methodName = uri.substring(uri.lastIndexOf('/') + 1);
+
         //3. 获取方法对象
 
         try {
