@@ -59,5 +59,19 @@ public class RouteServlet extends BaseServlet {
         writeValue(pb,response);
     }
 
-
+    /**
+     * rid->route detail
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    public void findOne(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //1. rid
+        //2. service->route
+        //json
+        String rid = request.getParameter("rid");
+        Route route = service.findOne(rid);
+        writeValue(route,response);
+    }
 }
