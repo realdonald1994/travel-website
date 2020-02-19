@@ -7,22 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d156697f-ee8d-4e43-b642-18f9e466b843" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/FavoriteDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/impl/FavoriteDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/impl/CategoryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/dao/impl/CategoryDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/FavoriteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/FavoriteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/impl/FavoriteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/impl/FavoriteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/impl/RouteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/service/impl/RouteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/CategoryServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/CategoryServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/RouteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/travel/web/servlet/RouteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/route_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/route_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/impl/CategoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/web/servlet/CategoryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/web/servlet/CategoryServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/dao/CategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/dao/CategoryDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/dao/impl/CategoryDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/dao/impl/CategoryDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/CategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/impl/RouteServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/service/impl/RouteServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/travel/web/servlet/RouteServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/travel/web/servlet/RouteServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +233,7 @@
       <option name="presentableId" value="Default" />
       <updated>1581735061549</updated>
       <workItem from="1581735070024" duration="62499000" />
-      <workItem from="1582052542102" duration="15598000" />
+      <workItem from="1582052542102" duration="16001000" />
     </task>
     <task id="LOCAL-00001" summary="fitst commit">
       <created>1581912297561</created>
@@ -307,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582062755205</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="seventh commit: half of functions achieved.">
+      <created>1582078902476</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1582078902476</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +331,8 @@
     <MESSAGE value="firth commit" />
     <MESSAGE value="fifth commit" />
     <MESSAGE value="sixth commit: favorite" />
-    <option name="LAST_COMMIT_MESSAGE" value="sixth commit: favorite" />
+    <MESSAGE value="seventh commit: half of functions achieved." />
+    <option name="LAST_COMMIT_MESSAGE" value="seventh commit: half of functions achieved." />
   </component>
   <component name="WindowStateProjectService">
     <state x="677" y="189" key="#MailUtils" timestamp="1581815083988">
@@ -348,46 +347,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582077516514" />
-    <state x="546" y="113" key="CommitChangelistDialog2" timestamp="1582062752582">
+    <state x="546" y="113" key="CommitChangelistDialog2" timestamp="1582078899315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="546" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582062752582" />
+    <state x="546" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582078899315" />
     <state x="740" y="260" key="FileChooserDialogImpl" timestamp="1581911978905">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581911978905" />
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1582077932347">
+    <state width="1877" height="338" key="GridCell.Tab.0.bottom" timestamp="1582079218844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582077932347" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1582077932347">
+    <state width="1877" height="338" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582079218844" />
+    <state width="1877" height="338" key="GridCell.Tab.0.center" timestamp="1582079218844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582077932347" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1582077932347">
+    <state width="1877" height="338" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582079218844" />
+    <state width="1877" height="338" key="GridCell.Tab.0.left" timestamp="1582079218844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582077932347" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1582077932347">
+    <state width="1877" height="338" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582079218844" />
+    <state width="1877" height="338" key="GridCell.Tab.0.right" timestamp="1582079218844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582077932347" />
-    <state width="1877" height="338" key="GridCell.Tab.1.bottom" timestamp="1582061664751">
+    <state width="1877" height="338" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582079218844" />
+    <state width="1877" height="338" key="GridCell.Tab.1.bottom" timestamp="1582079218844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582061664751" />
-    <state width="1877" height="338" key="GridCell.Tab.1.center" timestamp="1582061664751">
+    <state width="1877" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582079218844" />
+    <state width="1877" height="338" key="GridCell.Tab.1.center" timestamp="1582079218844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582061664751" />
-    <state width="1877" height="338" key="GridCell.Tab.1.left" timestamp="1582061664751">
+    <state width="1877" height="338" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582079218844" />
+    <state width="1877" height="338" key="GridCell.Tab.1.left" timestamp="1582079218844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582061664751" />
-    <state width="1877" height="338" key="GridCell.Tab.1.right" timestamp="1582061664751">
+    <state width="1877" height="338" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582079218844" />
+    <state width="1877" height="338" key="GridCell.Tab.1.right" timestamp="1582079218844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582061664751" />
+    <state width="1877" height="338" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582079218844" />
     <state width="1293" height="274" key="GridCell.Tab.2.bottom" timestamp="1582051822807">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -408,10 +407,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581908976233" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1582062764495">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1582078904544">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582062764495" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582078904544" />
     <state x="690" y="274" key="extract.method.dialog" timestamp="1581957856267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
