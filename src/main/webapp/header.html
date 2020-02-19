@@ -1,6 +1,7 @@
 <!-- 头部 start -->
     <script src="js/getParameter.js"></script>
     <script>
+        let cid = getParameter("cid");
         $(function () {
             //search user information:username
             $.get("user/findOne",{},function (data) {
@@ -9,12 +10,17 @@
             });
             //search category information
             $.get("category/findAll",{},function (data) {
-                let lis = '<li class="nav-active"><a href="index.html">首页</a></li>';
+                let lis = '<li><a href="index.html">首页</a></li>';
                 for(let i=0;i<data.length;i++){
-                    let li = '<li><a href="route_list.html?cid='+data[i].cid+'">'+data[i].cname+'</a></li>';
+                    let li;
+                    if(cid == data[i].cid){
+                        li = '<li class="nav-active"><a href="route_list.html?cid='+data[i].cid+'">'+data[i].cname+'</a></li>';
+                    }else{
+                        li = '<li ><a href="route_list.html?cid='+data[i].cid+'">'+data[i].cname+'</a></li>';
+                    }
                     lis+=li;
                 }
-                lis+='<li><a href="favoriterank.html">收藏排行榜</a></li>';
+                lis+='<li ><a href="favoriterank.html">收藏排行榜</a></li>';
 
                 $("#category").html(lis);
             });

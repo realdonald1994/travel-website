@@ -15,7 +15,7 @@ public class RouteDaoImpl implements RouteDao {
     @Override
     public int findTotalCount(int cid,String rname) {
 //        String sql = "select count(*) from tab_route where cid=?";
-        String sql ="select count(*)  from tab_route where 1=1";
+        String sql ="select count(*) from tab_route where 1=1";
         StringBuilder sb = new StringBuilder(sql);
 
         List params = new ArrayList();
