@@ -4,10 +4,12 @@ E:\code\intellij\travel\src\main\java\cn\itcast\travel\dao\CategoryDao.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\dao\UserDao.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\domain\RouteImg.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\service\impl\CategoryServiceImpl.java
+E:\code\intellij\travel\src\main\java\cn\itcast\travel\service\impl\FavoriteServiceImpl.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\dao\RouteImgDao.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\dao\impl\RouteDaoImpl.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\domain\Favorite.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\dao\SellerDao.java
+E:\code\intellij\travel\src\main\java\cn\itcast\travel\dao\FavoriteDao.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\domain\PageBean.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\domain\User.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\service\UserService.java
@@ -31,6 +33,8 @@ E:\code\intellij\travel\src\main\java\cn\itcast\travel\domain\Route.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\web\servlet\ActiveUserServlet.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\util\Md5Util.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\web\servlet\CheckCodeServlet.java
+E:\code\intellij\travel\src\main\java\cn\itcast\travel\service\FavoriteService.java
+E:\code\intellij\travel\src\main\java\cn\itcast\travel\dao\impl\FavoriteDaoImpl.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\domain\ResultInfo.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\web\servlet\CategoryServlet.java
 E:\code\intellij\travel\src\main\java\cn\itcast\travel\service\impl\RouteServiceImpl.java

@@ -50,4 +50,10 @@ public class CategoryServiceImpl implements CategoryService {
 
         return list;
     }
+
+    @Override
+    public Category findOne(String cid) {
+        Category category = dao.findOne(Integer.parseInt(cid));
+        return category;
+    }
 }

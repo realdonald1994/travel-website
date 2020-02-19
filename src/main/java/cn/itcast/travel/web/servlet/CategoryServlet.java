@@ -29,4 +29,11 @@ public class CategoryServlet extends BaseServlet {
     }
 
 
+    public void findOne(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String cid = request.getParameter("cid");
+        Category category = service.findOne(cid);
+        String cname = category.getCname();
+        writeValue(cname,response);
+    }
+
 }

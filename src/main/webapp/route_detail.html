@@ -19,8 +19,8 @@
         <div class="bread_box">
             <a href="/">首页</a>
             <span> &gt;</span>
-            <a href="#">国内游</a><span> &gt;</span>
-            <a href="#">全国-曼谷6-7天自由行 泰国出境旅游 特价往返机票自由行二次确认</a>
+            <a href="#" id="first_title">国内游</a><span> &gt;</span>
+            <a href="#" id="second_title">全国-曼谷6-7天自由行 泰国出境旅游 特价往返机票自由行二次确认</a>
         </div>
         <div class="prosum_box">
             <dl class="prosum_left">
@@ -70,10 +70,10 @@
                 <div class="pros_price">
                     <p class="price"><strong id="price">¥2699.00</strong><span> 起</span></p>
                     <p class="collect">
-                        <a class="btn"><i class="glyphicon glyphicon-heart-empty"></i>点击收藏</a>
+                        <a class="btn" id="favorite" onclick="addFavorite();"><i class="glyphicon glyphicon-heart-empty"></i>点击收藏</a>
 
-                        <a  class="btn already" disabled="disabled"><i class="glyphicon glyphicon-heart-empty"></i>点击收藏</a>
-                        <span>已收藏100次</span>
+<!--                        <a  class="btn already" disabled="disabled"><i class="glyphicon glyphicon-heart-empty"></i>点击收藏</a>-->
+                        <span id="favoriteCount">已收藏100次</span>
                     </p>
                 </div>        
             </div>
@@ -184,6 +184,14 @@
             $("#sname").html(route.seller.sname);
             $("#consphone").html(route.seller.consphone);
             $("#address").html(route.seller.address);
+            $("#favoriteCount").html("已收藏"+route.count+"次");
+            $("#second_title").html(route.rname);
+
+
+            let cid = route.cid;
+            $.get("category/findOne",{cid:cid},function (cname) {
+                $("#first_title").html(cname);
+            });
 
             /*
                  <dt>
@@ -219,7 +227,39 @@
             goImg();
         });
     });
+    $(function () {
+        let rid = getParameter("rid");
+        $.get("route/isFavorite",{rid:rid},function (flag) {
+            if(flag){
+                //favorite
+                //<a  class="btn already" disabled="disabled">
 
+                $("#favorite").addClass("already");
+                $("#favorite").attr("disabled","disabled");
+                $("#favorite").removeAttr("onclick");
+
+            }else {
+                //not favorite
+            }
+        });
+
+    });
+    //favorite
+    function addFavorite() {
+        let rid = getParameter("rid");
+        // user login or not?
+        $.get("user/findOne",{},function (user) {
+            if(user){
+                $.get("route/addFavorite",{rid:rid},function () {
+                    // refresh
+                    location.reload();
+                });
+            }else{
+                alert("you don't login, please login");
+                location.href="http://localhost/travel/login.html";
+            }
+        });
+    }
     </script>
 </body>
 

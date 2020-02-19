@@ -2,7 +2,10 @@ package cn.itcast.travel.web.servlet;
 
 import cn.itcast.travel.domain.PageBean;
 import cn.itcast.travel.domain.Route;
+import cn.itcast.travel.domain.User;
+import cn.itcast.travel.service.FavoriteService;
 import cn.itcast.travel.service.RouteService;
+import cn.itcast.travel.service.impl.FavoriteServiceImpl;
 import cn.itcast.travel.service.impl.RouteServiceImpl;
 
 import javax.servlet.ServletException;
@@ -16,6 +19,7 @@ import java.io.IOException;
 public class RouteServlet extends BaseServlet {
 
     private RouteService service =  new RouteServiceImpl();
+    FavoriteService favoriteService = new FavoriteServiceImpl();
     /**
      * page query
      * @param request
@@ -74,4 +78,46 @@ public class RouteServlet extends BaseServlet {
         Route route = service.findOne(rid);
         writeValue(route,response);
     }
-}
+
+    /**
+     *  favorite:user->route
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    public void isFavorite(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String rid = request.getParameter("rid");
+        User user = (User)request.getSession().getAttribute("user");
+        int uid;
+        if(user ==null){
+            // not login
+            uid =0;
+        }else{
+            // login
+            uid =user.getUid();
+        }
+
+        boolean flag = favoriteService.isFavorite(rid, uid);
+        //json
+        writeValue(flag,response);
+
+    }
+
+    public void addFavorite(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String rid = request.getParameter("rid");
+        User user = (User)request.getSession().getAttribute("user");
+        int uid;
+        if(user ==null){
+            // not login
+            return;
+        }else{
+            // login
+            uid =user.getUid();
+        }
+
+        // add favorite
+        favoriteService.add(rid,uid);
+    }
+
+    }

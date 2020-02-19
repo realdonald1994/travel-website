@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface CategoryDao {
     public List<Category> findAll();
+
+    public Category findOne(int cid);
 }
